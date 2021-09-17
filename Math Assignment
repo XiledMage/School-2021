@@ -3,6 +3,7 @@
 ###                     September 17, 2021                ###
 ###                         Purpose                       ###
 #############################################################
+
 def main():
 #Defines Variables used for all equations
     Var1 = 13;Var2 = 5;Var3 = 3
