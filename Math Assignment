@@ -6,19 +6,19 @@
 
 def main():
 #Defines Variables used for all equations
-    Var1 = 13;Var2 = 5;Var3 = 3
+    a = 13;b = 5;c = 3
 #Adding Variables to define Variable 4
-    Var4=Var1+Var2+Var3
-    print(Var4)
+    SumOfABC=a+b+c
+    print(SumOfABC)
 #Dividing first and second variable to define Variable 5
-    Var5=Var1%Var2
-    print(Var5)
+    theQuotient=a%b
+    print(theQuotient)
 #Variable three is raised to the power of 3 for Variable 6
-    Var6=Var2**3
-    print(Var6)
+    bRaisedToThePowerOf3=b**3
+    print(bToThePowerOf3)
 #Dividing Variable 1 by 4 for interger division for Variable 7
-    Var7=Var1//4
-    print(Var7)
+    aDividedBy4=a//4
+    print(aDividedBy4)
 
 if __name__ == "__main__":
     main()
