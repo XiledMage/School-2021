@@ -1,7 +1,9 @@
 #############################################################
 ###                     Cen Marcus Vazquez                ###
 ###                     September 17, 2021                ###
-###                         Purpose                       ###
+### The purpose of this code is to take 3 variables and   ###
+### to show multiple mathmatical equations that can be    ###
+###                     done in Python                    ###
 #############################################################
 
 def main():
