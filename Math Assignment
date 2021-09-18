@@ -7,16 +7,16 @@
 def main():
 #Defines Variables used for all equations, Weekly salary assumed in the 1000s.
     numberOfEmployees = 13;hoursPerWeek = 5;weeklySalary = 3
-#Adding Variables to define Variable 4
+#Adding employees, hours, and pay to define Gross Pay
     grossPay=numberOfEmployees+hoursPerWeek+weeklySalary
     print(grossPay)
-#Dividing first and second variable to define Variable 5
+#Dividing the number of employees and weekly hours variable to define hours per employee
     theQuotient=numberOfEmployees%hoursPerWeek
     print(theQuotient)
-#Variable three is raised to the power of 3 for Variable 6
+#Weekly salary is raised to the power of 3
     hoursRaisedToThePowerOf3=hoursPerWeek**3
     print(hoursRaisedToThePowerOf3)
-#Dividing Variable 1 by 4 for interger division for Variable 7
+#Dividing employees by 4 for interger division
     employeesDividedBy4=numberOfEmployees//4
     print(employeesDividedBy4)
 
