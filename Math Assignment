@@ -5,20 +5,20 @@
 #############################################################
 
 def main():
-#Defines Variables used for all equations
-    a = 13;b = 5;c = 3
+#Defines Variables used for all equations, Weekly salary assumed in the 1000s.
+    numberOfEmployees = 13;hoursPerWeek = 5;weeklySalary = 3
 #Adding Variables to define Variable 4
-    SumOfABC=a+b+c
-    print(SumOfABC)
+    grossPay=numberOfEmployees+hoursPerWeek+weeklySalary
+    print(grossPay)
 #Dividing first and second variable to define Variable 5
-    theQuotient=a%b
+    theQuotient=numberOfEmployees%hoursPerWeek
     print(theQuotient)
 #Variable three is raised to the power of 3 for Variable 6
-    bRaisedToThePowerOf3=b**3
-    print(bToThePowerOf3)
+    hoursRaisedToThePowerOf3=hoursPerWeek**3
+    print(hoursRaisedToThePowerOf3)
 #Dividing Variable 1 by 4 for interger division for Variable 7
-    aDividedBy4=a//4
-    print(aDividedBy4)
+    employeesDividedBy4=numberOfEmployees//4
+    print(employeesDividedBy4)
 
 if __name__ == "__main__":
     main()
