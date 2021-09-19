@@ -11,16 +11,16 @@ def main():
     numberOfEmployees = 13;hoursPerWeek = 5;weeklySalary = 3
 #Adding employees, hours, and pay to define Gross Pay
     grossPay=numberOfEmployees+hoursPerWeek+weeklySalary
-    print(grossPay)
+    print("Gross Pay = " +str(grossPay))
 #Dividing the number of employees and weekly hours variable to define hours per employee
     theQuotient=numberOfEmployees%hoursPerWeek
-    print(theQuotient)
+    print("Quotient = " +str(theQuotient))
 #Weekly salary is raised to the power of 3
     hoursRaisedToThePowerOf3=hoursPerWeek**3
-    print(hoursRaisedToThePowerOf3)
+    print("Hours Raised To The Power Of 3 = " +str(hoursRaisedToThePowerOf3))
 #Dividing employees by 4 for interger division
     employeesDividedBy4=numberOfEmployees//4
-    print(employeesDividedBy4)
+    print("Employees Divided By 4 = " +str(employeesDividedBy4))
 
 if __name__ == "__main__":
     main()
