@@ -1,5 +1,5 @@
 name = input("what is your first and last name?")
-Height = input("what is your height? (in cm)")
+Height = input("what is your height? (Example 5ft 9in = 5.9)")
 Weight = input("what is your current weight?")
 Running = input("How may days have you gone running this month?")
     
@@ -12,3 +12,12 @@ lossOfLbs = int(Running)//2
 
 weightLossAfter = (int(Weight) - int(lossOfLbs))
 print("Your weight after running " + str(Running) + " days will be " + str(weightLossAfter) + " lbs. ")
+
+Stool = float(1.5)
+Chair = float(3.4)
+
+stoolHeight = (Stool * 3)
+chairHeight = (Chair * 2)
+
+maxHeight = stoolHeight + chairHeight + float(Height)
+print("If you were to stand on 3 stool and 2 chairs, your max height would be " + str(maxHeight))
