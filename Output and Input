@@ -1,0 +1,11 @@
+name = input("what is your first and last name?")
+print("Your name is " + name)
+
+Height = input("what is your height? (in cm)")
+print("Your height is " + Height + "cm")
+
+Weight = input("what is your current weight?")
+print("Your weight " + Weight + "lbs")
+
+Running = input("How may days have you gone running this month?")
+print("You've gone running " + Running + " days this month." )
