@@ -1,23 +1,36 @@
-name = input("what is your first and last name?")
-Height = input("what is your height? (Example 5ft 9in = 5.9)")
-Weight = input("what is your current weight?")
-Running = input("How may days have you gone running this month?")
+#############################################################
+###                     Cen Marcus Vazquez                ###
+###                     September 26, 2021                ###
+### The purpose of this code is to be able to accurately  ###
+### take user input and run serveral equations to output  ###
+### wieghtloss based on a set amount for a specific amount###
+### of time spent running, and to show height of the user ###
+### while standing on a set amount of furniture           ###
+#############################################################
+
+def main():
     
-print("Your name is " + name)
-print("Your height is " + Height)
-print("Your weight " + Weight + "lbs")
-print("You've gone running " + Running + " days this month." )
+    name = input("what is your first and last name?")
+    Height = input("what is your height? (in inches) ")
+    Weight = input("what is your current weight?")
+    Running = input("How may days have you gone running this month?")
+    
+    print("Your name is " + name)
+    print("Your height is " + Height)
+    print("Your weight " + Weight + "lbs")
+    print("You've gone running " + Running + " days this month." )
 
-lossOfLbs = int(Running)//2
+    lossOfLbs = int(Running)//2
 
-weightLossAfter = (float(Weight) - int(lossOfLbs))
-print("Your weight after running " + str(Running) + " days will be " + str(weightLossAfter) + " lbs. ")
+    weightLossAfter = (float(Weight) - int(lossOfLbs))
+    print("Your weight after running " + str(Running) + " days will be " + str(weightLossAfter) + " lbs. ")
 
-Stool = float(1.5)
-Chair = float(3.4)
+    stoolHeight = float(17) * 3
+    chairHeight = float(40) * 2
 
-stoolHeight = (Stool * 3)
-chairHeight = (Chair * 2)
+    maxHeight = round(stoolHeight + chairHeight + float(Height),2)
+    heightInFeet = round((maxHeight/12),2)
+    print("If you were to stand on 3 stool and 2 chairs, your max height would be " + str(heightInFeet) + "ft. ")
 
-maxHeight = stoolHeight + chairHeight + float(Height)
-print("If you were to stand on 3 stool and 2 chairs, your max height would be " + str(maxHeight))
+if __name__ == "__main__":
+    main()
