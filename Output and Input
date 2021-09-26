@@ -4,13 +4,13 @@ Weight = input("what is your current weight?")
 Running = input("How may days have you gone running this month?")
     
 print("Your name is " + name)
-print("Your height is " + Height + "cm")
+print("Your height is " + Height)
 print("Your weight " + Weight + "lbs")
 print("You've gone running " + Running + " days this month." )
 
 lossOfLbs = int(Running)//2
 
-weightLossAfter = (int(Weight) - int(lossOfLbs))
+weightLossAfter = (float(Weight) - int(lossOfLbs))
 print("Your weight after running " + str(Running) + " days will be " + str(weightLossAfter) + " lbs. ")
 
 Stool = float(1.5)
