@@ -6,7 +6,7 @@ else:
     print("{0} is an Odd number". format(var1))
 
 # Checking if number is divisible by 3#     
-if var1 % 3 == 0
+if var1 % 3 == 0:
     print("{0} is a multiple of 3". format(var1))
 else: 
     print("{0} is not of a multiple of 3". format(var1))
