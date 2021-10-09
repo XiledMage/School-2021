@@ -1,3 +1,4 @@
+def main():
 var1 = int(input("Choose a number anywhere from 0-1000"))
 
 # Odds or Evens Check #
