@@ -1,12 +1,28 @@
 var1 = int(input("Choose a number anywhere from 0-1000"))
-# Odds or Evens Check#
+
+# Odds or Evens Check #
 if (var1 % 2) == 0:
     print("{0} is an Even number". format(var1))
 else:
     print("{0} is an Odd number". format(var1))
 
-# Checking if number is divisible by 3#     
+# Checking if number is divisible by 3 #     
 if var1 % 3 == 0:
     print("{0} is a multiple of 3". format(var1))
 else: 
     print("{0} is not of a multiple of 3". format(var1))
+    
+# Checking to see if user input falls under 13-19 #
+if var1 >= 13 and var1 <= 19:
+    print("{0} is a number in the teens". format(var1))
+else: 
+    print("{0} is not a number in the teens". format(var1))
+    
+#Color coding the user input
+if var1 >=0 and var1 <= 250:
+    print("The color based on {0} is Red". format(var1))
+if var1 >=251 and var1 <= 500:
+    print("The color based on {0} is White". format(var1))
+if var1 >=501 and var1 <= 1000:
+    print("The color based on {0} is Blue". format(var1))
+    
