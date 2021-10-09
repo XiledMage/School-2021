@@ -18,11 +18,10 @@ if var1 >= 13 and var1 <= 19:
 else: 
     print("{0} is not a number in the teens". format(var1))
     
-# Color coding the user input #
+#Color coding the user input
 if var1 >=0 and var1 <= 250:
     print("The color based on {0} is Red". format(var1))
 if var1 >=251 and var1 <= 500:
     print("The color based on {0} is White". format(var1))
 if var1 >=501 and var1 <= 1000:
     print("The color based on {0} is Blue". format(var1))
-    
