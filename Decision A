@@ -1,0 +1,10 @@
+var1 = int(input("Choose a number anywhere from 0-1000"))
+if (var1 % 2) == 0:
+    print("{0} is an Even number". format(var1))
+else:
+    print("{0} is an Odd number". format(var1))
+    
+if var1 % 3 == 0
+    print("{0} is a multiple of 3". format(var1))
+else: 
+    print("{0} is not of a multiple of 3". format(var1))
