@@ -19,6 +19,10 @@ def dateChecker():
     from datetime import date
     today = str(date.today())
     print(f'Todays date is {today}.') 
+    
+def quitChecker():
+    if user_input == "4":
+    break
 
 print("1. Enter Name")
 print("2. Enter Current Age")
@@ -32,7 +36,10 @@ if mainMenuChooser == 2:
     ageChecker()
 if mainMenuChooser == 3:
     dateChecker()
+if mainMenuChooser == 4:
+    quitChecker()
 
 nameChecker()
 ageChecker()
 dateChecker()
+quitChecker()
