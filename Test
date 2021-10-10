@@ -24,7 +24,7 @@ print("1. Enter Name")
 print("2. Enter Current Age")
 print("3. Todays Date")
 print("4. Quit")
-mainMenuChooser = input("Which option do you choose?")
+mainMenuChooser = int(input("Which option do you choose?"))
 
 if mainMenuChooser == 1:
     nameChecker()
