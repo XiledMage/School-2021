@@ -22,7 +22,7 @@ def dateChecker():
     
 def quitChecker():
     if user_input == "4":
-    break
+        break
 
 print("1. Enter Name")
 print("2. Enter Current Age")
