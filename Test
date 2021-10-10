@@ -21,8 +21,8 @@ def dateChecker():
     print(f'Todays date is {today}.') 
     
 def quitChecker():
-    if user_input == "4":
-        break
+    print("Closing script, have a nice day!")
+    exit()
 
 print("1. Enter Name")
 print("2. Enter Current Age")
