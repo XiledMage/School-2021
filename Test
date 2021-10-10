@@ -1,14 +1,10 @@
 print("*** MAIN MENU ***")
-mainMenuChooser1 = print("1. Enter Name")
-mainMenuChooser2 = print("2. Enter Current Age")
-mainMenuChooser3 = print("3. Todays Date")
-mainMenuChooser4 = print("4. Quit")
-mainMenuChooser = input("Which option do you choose?")
 
 def nameChecker():
 # User inputs name and recieves it back with a greeting #
     name = input("what is your first and last name?")
     print("Hello " + name + ", have a good day.")
+
 def ageChecker():
     age = int(input("what is your curent age?"))
     if (age <10):
@@ -33,8 +29,8 @@ if mainMenuChooser2 == 2:
 if mainMenuChooser3 == 3:
     dateChecker()
 
-
-
-nameChecker()
-ageChecker()
-dateChecker()
+mainMenuChooser1 = print("1. Enter Name")
+mainMenuChooser2 = print("2. Enter Current Age")
+mainMenuChooser3 = print("3. Todays Date")
+mainMenuChooser4 = print("4. Quit")
+mainMenuChooser = input("Which option do you choose?")
