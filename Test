@@ -22,19 +22,18 @@ def dateChecker():
     today = str(date.today())
     print(f'Todays date is {today}.') 
 
-if mainMenuChooser1 == 1:
-    nameChecker()
-if mainMenuChooser2 == 2:
-    ageChecker()
-if mainMenuChooser3 == 3:
-    dateChecker()
-
 mainMenuChooser1 = print("1. Enter Name")
 mainMenuChooser2 = print("2. Enter Current Age")
 mainMenuChooser3 = print("3. Todays Date")
 mainMenuChooser4 = print("4. Quit")
 mainMenuChooser = input("Which option do you choose?")
 
+if mainMenuChooser1 == 1:
+    nameChecker()
+if mainMenuChooser2 == 2:
+    ageChecker()
+if mainMenuChooser3 == 3:
+    dateChecker()
 
 nameChecker()
 ageChecker()
