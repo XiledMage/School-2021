@@ -1,8 +1,9 @@
 def functioname():
     age = int(input("what is your curent age?"))
-    if (age <21):
+    if (age <10):
         print("You are only {0}, go to bed.".format(age))
-    if (age >10 and <21) pass:
+    if age >10 and age <21:
+        pass
     if (age >=21 and age <60):
         print("Since you are {0}, let's go have a drink.".format(age))
     if (age >60):
