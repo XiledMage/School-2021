@@ -1,7 +1,6 @@
 print("*** MAIN MENU ***")
 
 def nameChecker():
-# User inputs name and recieves it back with a greeting #
     name = input("what is your first and last name?")
     print("Hello " + name + ", have a good day.")
 
@@ -16,23 +15,22 @@ def ageChecker():
     if (age >60):
         print("Wow, {0} is really old".format(age))
 
-# Gathers the current date and prints it to user #
 def dateChecker():
     from datetime import date
     today = str(date.today())
     print(f'Todays date is {today}.') 
 
-mainMenuChooser1 = print("1. Enter Name")
-mainMenuChooser2 = print("2. Enter Current Age")
-mainMenuChooser3 = print("3. Todays Date")
-mainMenuChooser4 = print("4. Quit")
+print("1. Enter Name")
+print("2. Enter Current Age")
+print("3. Todays Date")
+print("4. Quit")
 mainMenuChooser = input("Which option do you choose?")
 
-if mainMenuChooser1 == 1:
+if mainMenuChooser == 1:
     nameChecker()
-if mainMenuChooser2 == 2:
+if mainMenuChooser == 2:
     ageChecker()
-if mainMenuChooser3 == 3:
+if mainMenuChooser == 3:
     dateChecker()
 
 nameChecker()
