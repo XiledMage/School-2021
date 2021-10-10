@@ -34,3 +34,8 @@ mainMenuChooser2 = print("2. Enter Current Age")
 mainMenuChooser3 = print("3. Todays Date")
 mainMenuChooser4 = print("4. Quit")
 mainMenuChooser = input("Which option do you choose?")
+
+
+nameChecker()
+ageChecker()
+dateChecker()
