@@ -1,7 +1,10 @@
 print("*** MAIN MENU ***")
 
+# User inputs name and recieves it back with a greeting #
+name = input("what is your first and last name?")
+print("Your name is " + name + "; Have an awesome day!")
 
-
+# Gathers the current date and prints it to user #
 from datetime import date
 today = str(date.today())
 print(f'Todays date is {today}.') 
