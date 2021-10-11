@@ -1,3 +1,11 @@
+#############################################################
+###                     Cen Marcus Vazquez                ###
+###                     October 10, 2021                  ###
+### The purpose of this code is to list out a main menu   ###
+### to allow the user to choose between multiple options  ###
+### while filling out answers for it                      ###
+#############################################################
+
 def main():
 
     print("*** MAIN MENU ***")
