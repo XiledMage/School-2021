@@ -1,11 +1,3 @@
-#############################################################
-###                     Cen Marcus Vazquez                ###
-###                     September 17, 2021                ###
-### The purpose of this code is to take 3 variables and   ###
-### to show multiple mathmatical equations that can be    ###
-###                     done in Python                    ###
-#############################################################
-
 def main():
 #Defines Variables used for all equations, Weekly salary assumed in the 1000s.
     numberOfEmployees = 13;hoursPerWeek = 5;weeklySalary = 3
