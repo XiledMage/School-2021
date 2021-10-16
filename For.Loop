@@ -1,0 +1,19 @@
+# Loop to force the user to choose a number between 1 and 50 #
+while True:
+    print("Choose a number between 1-50")
+    size = input('Answer: ')
+    if int(size) <=50:
+        print("You chose: " + size)
+        break
+    else:
+        print("That is not a number between 1 and 50; TRY AGAIN!")
+        
+# User is choosing the character to build the shapes with #
+shape = str(input("Choose any character on your keyboard to build the shapes out of."))
+print("You chose: " + shape)
+
+# Building the shape based on user input #
+x=size
+for i in range(1,size+1):
+    for j in range(i+1):
+        print(str(shape*i))
