@@ -3,11 +3,8 @@ import random
 
 guessesTaken = 0
 
-print('Hello! What is your name?')
-myName = input()
-
 number = random.randint(1, 20)
-print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
+print('Well I am thinking of a number between 1 and 20.')
 
 while guessesTaken < 10:
     print('Take a guess.')
@@ -15,6 +12,7 @@ while guessesTaken < 10:
     guess = int(guess)
 
     guessesTaken = guessesTaken + 1
+    print("Your current guess count is " + str(guessesTaken) + " out of 10 guesses:")
 
     if guess < number:
         print('Your guess is too low.')
@@ -27,7 +25,7 @@ while guessesTaken < 10:
 
 if guess == number:
     guessesTaken = str(guessesTaken)
-    print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')
+    print('Good job! You guessed my number in ' + guessesTaken + ' guesses!')
 
 if guess != number:
     number = str(number)
