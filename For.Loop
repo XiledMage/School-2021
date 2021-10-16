@@ -9,11 +9,8 @@ while True:
         print("That is not a number between 1 and 50; TRY AGAIN!")
         
 # User is choosing the character to build the shapes with #
-shape = str(input("Choose any character on your keyboard to build the shapes out of."))
-print("You chose: " + shape)
-
-# Building the shape based on user input #
-x=size
+c = str(input("Enter the character you want to print the triangle : "))
 for i in range(1,size+1):
-    for j in range(i+1):
-        print(str(shape*i))
+  for j in range(1,i+1):
+    print(c+" ", end='')
+  print()
