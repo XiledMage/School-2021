@@ -1,1 +1,15 @@
-asd
+# A #
+while True:
+    print('Enter your age:')
+    age = input()
+    try:
+        age = int(age)
+    except:
+        print('Please use numeric digits.')
+        continue
+    if age <21 and age <99:
+        print('Please enter a number between 21 and 99.')
+        continue
+    break
+
+print(f'Your age is {age}.')
