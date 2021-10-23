@@ -15,7 +15,12 @@ print(f'Your age is {age}.')
 
 # B #
 
+question = input("True or False : Seahorses have stomachs for the absorption of nutrients from food. \n")
 
+if question.lower() == "true":
+    print("Wrong, Seahorses dont have stomachs")
+else:
+    print("Correct!")
 
 # C #
 
@@ -23,7 +28,9 @@ userSentence = input("Please enter your own sentence :  ")
 vowels = 0
  
 for i in userSentence:
+    
     if(i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u' or i == 'A'
        or i == 'E' or i == 'I' or i == 'O' or i == 'U'):
         vowels = vowels + 1
-print("Total number of vowels in your sentence is : = ", vowels)
+
+print("Total number of vowels in your sentence is equal to : ", vowels)
