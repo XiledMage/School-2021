@@ -1,4 +1,7 @@
+
+
 # A #
+# Takes user input and errors out if not between 21 and 99 and forces user to pick a number between the 2 #
 while True:
     age = input("what is your current age?")
     try:
@@ -14,16 +17,24 @@ while True:
 print(f'Your age is {age}.')
 
 # B #
-
-question = input("True or False : Seahorses have stomachs for the absorption of nutrients from food. \n")
-
-if question.lower() == "true":
-    print("Wrong, Seahorses dont have stomachs")
-else:
-    print("Correct!")
-
+# User will cause an loop back to the main question if they put anything other that 'T' or 'F'
+i = 0
+while i == 0:
+    question = input("[T]rue of [F]alse: Seahorses have stomachs for the abosorption of nutrients from food. \n Enter (T) or (F)")
+    
+    if question.lower() == "t":
+        print("Wrong, Seahorses don't have stomachs")
+        break
+    
+    if question.lower() == "f":
+        print("Correct! Just intestines for the absorption of nutrients from food. Food passes through their digestive system rapidly, so they eat plankton and small crustaceans almost constantly.")
+        break
+    
+    else:
+        print("Invalid Entry, -- Please use T or F")
+        continue
+    
 # C #
-
 userSentence = input("Please enter your own sentence :  ")
 vowels = 0
  
