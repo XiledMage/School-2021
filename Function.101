@@ -1,27 +1,31 @@
 import math
 
-def name():
-    userInput = input("What is your name?")
-    return(userInput)
- 
-def count(name):
-    letterCount = str(name)
-    print(int(len(letterCount)))
-    return int(len(letterCount))
- 
-def oddOrEven(userInput):
-    if (userInput % 2) == 0:
-        print((str(userInput) + " is an even number"))
-    else:
-        print((str(userInput) + " is an odd number"))
+def main():
 
-def randomMath(userSubmission):
-    print("You have entered " + str(userSubmission))
-    print("Your choice squared is equal to " + str(userSubmission * userSubmission))
-    print("Your choice cubed is equal to " + str(userSubmission ** 3))
-    print("The square root of your choice is " + str(round(math.sqrt(userSubmission), 3)))
+    def name():
+        userInput = input("What is your name?")
+        return(userInput)
  
-UserName = name()
-UserNameInt = count(UserName)
-oddOrEven(UserNameInt)
-randomMath(UserNameInt)
+    def count(name):
+        letterCount = str(name)
+        print(int(len(letterCount)))
+        return int(len(letterCount))
+ 
+    def oddOrEven(userInput):
+        if (userInput % 2) == 0:
+            print((str(userInput) + " is an even number"))
+        else:
+            print((str(userInput) + " is an odd number"))
+
+    def randomMath(userSubmission):
+        print("You have entered " + str(userSubmission))
+        print("Your choice squared is equal to " + str(userSubmission * userSubmission))
+        print("Your choice cubed is equal to " + str(userSubmission ** 3))
+        print("The square root of your choice is " + str(round(math.sqrt(userSubmission), 3)))
+ 
+    UserName = name()
+    UserNameInt = count(UserName)
+    oddOrEven(UserNameInt)
+    randomMath(UserNameInt)
+
+main()
