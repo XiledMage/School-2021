@@ -3,8 +3,7 @@ import math
 def main():
 
     def name():
-        userInput = input("What is your name?")
-        return(userInput)
+        return(input("What is your name?"))
  
     def count(name):
         letterCount = str(name)
