@@ -1,0 +1,30 @@
+import math
+
+def name():
+    x = input("What is your name?")
+    return(x)
+ 
+def count(name):
+    a = str(name)
+    print(int(len(a)))
+    return int(len(a))
+ 
+def oddOrEven(x):
+    if (x % 2) == 0:
+        print((str(x) + " is an even number"))
+    else:
+        print((str(x) + " is an odd number"))
+
+def function4(B):
+    print(B)
+    print(B * B)
+    print(B ** 3)
+    print(round(math.sqrt(B), 3))
+ 
+UserName = name()
+ 
+UserNameInt = count(UserName)
+ 
+oddOrEven(UserNameInt)
+
+function4(UserNameInt)
