@@ -1,46 +1,46 @@
-def main():
-    
-    value = 0     # Holds the next or current value
-    high = 0      # stores the highest temp
-    low = 0       # stores the lowest temp
-    average = 0   # stores the average temp
-    total = 0     # Keeps a running sum of all values
-    count = 0     # Tracks user input
+def displayOutput(value, low, high, avg):
+    userInputA = (value - 32) * 5 / 9
+    print("---- Temperature Output ----")
+    print("Current Temperature: \t\t\t {0:.2f} f\t\t".format(value), end="")
+    print("{0:.2f} c\t".format(userInputA))
 
-    value = float(input("Enter the current temperature or enter -999 to close the program"))
-    
-    while(value != -999):
+    userInputA = (high - 32) * 5 / 9
+    print("Highest temperature: \t\t\t {0:.2f} f\t\t".format(high), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+    userInputA = (low - 32) * 5 / 9
+    print("Lowest temperature: \t\t\t {0:.2f} f\t\t".format(low), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+    userInputA = (avg - 32) * 5 / 9
+    print("Average temperature: \t\t\t {0:.2f} f\t\t".format(avg), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+
+def main():
+    value = 0  # Holds the next or current value
+    high = 0  # stores the highest temp
+    low = 0  # stores the lowest temp
+    average = 0  # stores the average temp
+    total = 0  # Keeps a running sum of all values
+    count = 0  # Tracks user input
+
+    while (value != -999):
+        value = float(input("Enter the current temperature or enter -999 to close the program"))
         count += 1
         if (value != -999.0):
-            if(count == 1):
+            if (count == 1):
                 high = value
                 low = value
-            if(value > high):
+            if (value > high):
                 high = value
-            if(value < low):
+            if (value < low):
                 low = value
             total += value
-            average = total/count
+            average = total / count
             displayOutput(value, low, high, average)
         else:
             print("closing")
-            
-    def displayOutput(value, low, high, avg):
-    
-        valueC = (value - 32) * 5/9
-    
-        print("---- Temperature Output ----")
-        print("Current temperature: \t\t\t {0:.2f} f\t\t" .format(value). end=="")
-        print("{0.2f} c\t" .format(valueC))
-        
-        valueC = (high - 32) * 5/9
-        print("Highest temperature: \t\t\t {0:.2f} f\t\t" .format(high). end=="")
-        print("{0.2f} c\t" .format(valueC))
-        
-        valueC = (low - 32) * 5/9
-        print("Lowest temperature: \t\t\t {0:.2f} f\t\t" .format(low). end=="")
-        print("{0.2f} c\t" .format(valueC))
-    
-    displayOutput()
-    
+
+
 main()
