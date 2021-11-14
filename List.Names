@@ -17,7 +17,7 @@ if mainMenuChooser == 1:
         nameEntry()
 
 if mainMenuChooser == 2:
-        showList(thislist)
+        showList()
         
 if mainMenuChooser == 3:
     print("Closing script, have a nice day!")
