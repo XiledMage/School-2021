@@ -1,5 +1,22 @@
-input_string = input("Enter family members separated by comma ")
-family_list  = input_string.split(",")
-print("Printing all family member names")
-for name in family_list:
-    print(name)
+print("****** Main Menu ******")
+print("1. Enter Name")
+print("2. Show current list of names")
+print("3. Quit")
+mainMenuChooser = int(input("Which option do you choose?"))
+
+
+def nameEntry():
+    
+    thislist = []
+    thislist.append(input("Enter ny name."))
+
+if mainMenuChooser == 1:
+        nameEntry()
+
+def showList():
+    
+    for x in thislist:
+        print(x)
+
+if mainMenuChooser == 2:
+        showList()
