@@ -1,5 +1,5 @@
 print("****** Main Menu ******")
-print("1. Enter Name")
+print("1. Enter  a Name")
 print("2. Show current list of names")
 print("3. Quit")
 mainMenuChooser = int(input("Which option do you choose?"))
@@ -7,16 +7,18 @@ mainMenuChooser = int(input("Which option do you choose?"))
 
 def nameEntry():
     
-    thislist = []
-    thislist.append(input("Enter ny name."))
+    choice = "Y"
+    while choice in ("y", "Y", "yes","YES","Yes"):
+	    f = input("Enter a name")
+	    print(f, "Is the name you entered")
+	    choice = input("Would you like to add another name to the list (y/n)? ")
 
 if mainMenuChooser == 1:
         nameEntry()
 
-def showList():
-    
-    for x in thislist:
-        print(x)
-
 if mainMenuChooser == 2:
-        showList()
+        showList(thislist)
+        
+if mainMenuChooser == 3:
+    print("Closing script, have a nice day!")
+    exit()
