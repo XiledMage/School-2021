@@ -24,10 +24,16 @@ def main():
     average = 0  # stores the average temp
     total = 0  # Keeps a running sum of all values
     count = 0  # Tracks user input
+    lst = []
 
     while (value != -999):
         value = float(input("Enter the current temperature or enter -999 to close the program"))
         count += 1
+        lst.append(value)
+        lst.sort()
+        print("All temperatures entered so far " + str(lst))
+
+
         if (value != -999.0):
             if (count == 1):
                 high = value
@@ -40,13 +46,8 @@ def main():
             average = total / count
             displayOutput(value, low, high, average)
         else:
-            print("closing")
-        
-        for i in range(0, value):
-            ele = float(input())
- 
-            lst.append(ele) # adding the element
-     
-        print(lst)
+            print("closing") 
+
+
 
 main()
