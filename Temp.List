@@ -1,0 +1,31 @@
+emp
+    average = 0  # stores the average temp
+    total = 0  # Keeps a running sum of all values
+    count = 0  # Tracks user input
+    lst = []  # creates an empty list
+
+    while (value != -999):
+        value = float(input("Enter the current temperature or enter -999 to close the program"))
+        count += 1
+        if (value != -999.0):
+            if (count == 1):
+                high = value
+                low = value
+            if (value > high):
+                high = value
+            if (value < low):
+                low = value
+            total += value
+            average = total / count
+            displayOutput(value, low, high, average)
+        else:
+            print("closing")
+        
+        for i in range(0, value):
+            ele = float(input())
+ 
+            lst.append(ele) # adding the element
+     
+        print(lst)
+
+main()
