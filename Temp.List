@@ -1,8 +1,29 @@
-emp
+def displayOutput(value, low, high, avg):
+    userInputA = (value - 32) * 5 / 9
+    print("---- Temperature Output ----")
+    print("Current Temperature: \t\t\t {0:.2f} f\t\t".format(value), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+    userInputA = (high - 32) * 5 / 9
+    print("Highest temperature: \t\t\t {0:.2f} f\t\t".format(high), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+    userInputA = (low - 32) * 5 / 9
+    print("Lowest temperature: \t\t\t {0:.2f} f\t\t".format(low), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+    userInputA = (avg - 32) * 5 / 9
+    print("Average temperature: \t\t\t {0:.2f} f\t\t".format(avg), end="")
+    print("{0:.2f} c\t".format(userInputA))
+
+
+def main():
+    value = 0  # Holds the next or current value
+    high = 0  # stores the highest temp
+    low = 0  # stores the lowest temp
     average = 0  # stores the average temp
     total = 0  # Keeps a running sum of all values
     count = 0  # Tracks user input
-    lst = []  # creates an empty list
 
     while (value != -999):
         value = float(input("Enter the current temperature or enter -999 to close the program"))
