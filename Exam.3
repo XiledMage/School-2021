@@ -1,0 +1,19 @@
+def main():
+    
+    def scoreCheck():
+        
+        while True: 
+        
+            var1 = float(input("Enter a single exam score or -999 to close the program"))
+        
+            if (var1 == -999.0):
+                print("Closing")
+                break
+            
+            elif (var1 >= 101):
+                print("{0} is not a exam score".format(var1))
+                continue
+    
+    scoreCheck()
+
+main()
