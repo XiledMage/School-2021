@@ -1,10 +1,12 @@
-var1 = float(input("Enter a single exam score or -999 to close the program"))
-
 def main():
+    
+    var1 = 0 #Holds the next or current use input
     
     print("****MAIN MENU****")
     
     def scoreCheck():
+        
+        var1 = float(input("Enter a single exam score or -999 to close the program"))
         
         while True: 
         
