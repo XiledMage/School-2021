@@ -17,13 +17,23 @@ def main():
                 continue
     
     
+    def printList():
+        
+        list.append(var1)
+        lst.sort()
+        print(lst)
+        
+    
     print("1. Enter an Exam Score")
     print("2. Print Current list High to Low and Low to High")
     mainMenuChooser = int(input("Which option do you choose?"))
     
     if mainMenuChooser == 1:
         scoreCheck()
+    if mainMenuChooser == 2:
+        printList()
         
     scoreCheck()
-
+    printList()
+    
 main()
