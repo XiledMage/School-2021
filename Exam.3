@@ -1,5 +1,7 @@
 def main():
     
+    print("****MAIN MENU****")
+    
     def scoreCheck():
         
         while True: 
@@ -14,6 +16,14 @@ def main():
                 print("{0} is not a exam score".format(var1))
                 continue
     
+    
+    print("1. Enter an Exam Score")
+    print("2. Print Current list High to Low and Low to High")
+    mainMenuChooser = int(input("Which option do you choose?"))
+    
+    if mainMenuChooser == 1:
+        scoreCheck()
+        
     scoreCheck()
 
 main()
