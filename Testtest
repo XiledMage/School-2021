@@ -1,0 +1,39 @@
+var1 = float(input("Enter a single exam score or -999 to close the program"))
+
+def main():
+    
+    print("****MAIN MENU****")
+    
+    def scoreCheck():
+        
+        while True: 
+        
+            if (var1 == -999.0):
+                print("Closing")
+                break
+            
+            elif (var1 >= 101):
+                print("{0} is not a exam score".format(var1))
+                continue
+    
+    
+    def printList():
+        
+        list.append(var1)
+        lst.sort()
+        print(lst)
+        
+    
+    print("1. Enter an Exam Score")
+    print("2. Print Current list High to Low and Low to High")
+    mainMenuChooser = int(input("Which option do you choose?"))
+    
+    if mainMenuChooser == 1:
+        scoreCheck()
+    if mainMenuChooser == 2:
+        printList()
+        
+    scoreCheck()
+    printList()
+    
+main()
